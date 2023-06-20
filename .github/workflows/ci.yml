@@ -86,7 +86,7 @@ jobs:
           summary: true
           update_check: true
           annotate_only: true
-          
+
       - uses: irongut/CodeCoverageSummary@v1.3.0
         with:
           filename: results/CodeCoverage/cobertura-coverage.xml
@@ -95,7 +95,7 @@ jobs:
           hide_complexity: true
           indicators: true
           output: both
-          
+
       -  run: |
           cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
 
